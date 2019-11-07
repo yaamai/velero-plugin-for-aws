@@ -23,7 +23,6 @@ def pipeline(arch):
           "git log -3",
           "git status",
           "git remote -v",
-          "PKG=velero-plugin-for-aws BIN=velero-plugin-for-aws GOOS=linux GOARCH={} VERSION=master ./hack/build.sh".format(arch),
           "go mod vendor"
         ]
       },
